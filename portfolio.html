@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <style type="text/css">
         body {
-            background-image: url("earth.jpg");
+            background-image: url("BluePisa.png");
             background-repeat: no-repeat;
             background-size:100%;
             background-attachment: fixed;
@@ -24,6 +24,7 @@
         }
         h1 {
             text-align: center;
+            color: white;
         }
         img { 
              display: block;
@@ -49,6 +50,9 @@
         hr {
             border: 2px solid Black;
         }
+        .Story { 
+            color: white;
+        }
         </style>
     </head>
     <body>
@@ -58,7 +62,7 @@
             <li><a href="resume.html">Resume</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
-        <a href = "#Jump to my CYOA: The Boy's Sacrifice" >The Boy's Sacrifice</a>
+        <a href = "#Story" >Jump to my CYOA: The Boy's Sacrifice</a>
         <h1>Dodge This!</h1>
         <div id="content3">
         <img src="snipofgame.PNG"> 
@@ -80,8 +84,10 @@
         <br>
         <h1 id = "Story">The Boy's Sacrifice</h1>
         <br>
+        <h2>Summary</h2>
         <p>The title of the story is pretty explanatory. A Boy is biking his way back home when he sees an opposum, half dead, dragging itself towards the side of the street to escape the waves of cars approaching. The Boy must make a decisive decision to rescue the opposum or just leave it. This decision will eventually lead him to his demise or a happy ending. </p>
         <br>
+        <h2>Flowchart</h2>
         <a id = "border" href="https://docs.google.com/drawings/d/1rYFXgDtSFImmQT3FQ9kZSRpzD-01n0PaXmVhdKyzg78/edit?usp=sharing" target=""><img src = "story.PNG" ></a>
         <br>
         <p>When in the development of this game, my first step was to contruct a simple, but fun story with many endings. The Boy's Sacrifice was built in chronological order and was later translated into python. Each decisive desicion or commentary was spilt into scenes. At each decision scence, I provided a very simple and comprehensive question that would change the story's path. I replay the code again and again to fix any issues after the desicion was made. One major problem I encountered was the use of randomization. For some reason, importing random harder than I expected. Furthermore, desicion made in this game was a range from (1-3). If random was 1, then one scene would play and the same for 2. However, the issue was the wrong scene would roll for random 1 and vice versa for random 2. To resolve this issue, I made conditions that the code had to run for deciding each desicion.    </p>
