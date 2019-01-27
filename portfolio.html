@@ -2,12 +2,12 @@
 <html> 
     <head> 
         <meta charset= "utf-8">
-        <title>About</title>
+        <title>Portfolio</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <style type="text/css">
         body {
-            background-image: url("theflash.jpg");
+            background-image: url("earth.jpg");
             background-repeat: no-repeat;
             background-size:100%;
             background-attachment: fixed;
@@ -46,6 +46,9 @@
         h2 {
             text-align: center;
         }
+        hr {
+            border: 2px solid Black;
+        }
         </style>
     </head>
     <body>
@@ -55,6 +58,7 @@
             <li><a href="resume.html">Resume</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
+        <a href = "#Jump to my CYOA: The Boy's Sacrifice" >The Boy's Sacrifice</a>
         <h1>Dodge This!</h1>
         <div id="content3">
         <img src="snipofgame.PNG"> 
@@ -71,6 +75,21 @@
         <p>This algorithm contributes significantly to the game because it moves the main sprite to dodge all of the other sprites. When the level start, set the main sprite coordinates to (0,0) or the center of the screen. There is a forever script that forever states that if DOWN, UP, RIGHT, or LEFT are pressed then it would move in that direction. When it is moving, it changes costumes to make it seems like it's actually moving instead of just sliding.   </p>
         <br>
         <img src="moreblocks.PNG">
+        <br>
+        <hr>
+        <br>
+        <h1 id = "Story">The Boy's Sacrifice</h1>
+        <br>
+        <p>The title of the story is pretty explanatory. A Boy is biking his way back home when he sees an opposum, half dead, dragging itself towards the side of the street to escape the waves of cars approaching. The Boy must make a decisive decision to rescue the opposum or just leave it. This decision will eventually lead him to his demise or a happy ending. </p>
+        <br>
+        <a id = "border" href="https://docs.google.com/drawings/d/1rYFXgDtSFImmQT3FQ9kZSRpzD-01n0PaXmVhdKyzg78/edit?usp=sharing" target=""><img src = "story.PNG" ></a>
+        <br>
+        <p>When in the development of this game, my first step was to contruct a simple, but fun story with many endings. The Boy's Sacrifice was built in chronological order and was later translated into python. Each decisive desicion or commentary was spilt into scenes. At each decision scence, I provided a very simple and comprehensive question that would change the story's path. I replay the code again and again to fix any issues after the desicion was made. One major problem I encountered was the use of randomization. For some reason, importing random harder than I expected. Furthermore, desicion made in this game was a range from (1-3). If random was 1, then one scene would play and the same for 2. However, the issue was the wrong scene would roll for random 1 and vice versa for random 2. To resolve this issue, I made conditions that the code had to run for deciding each desicion.    </p>
+        <br>
+        <p>Organizing each scene into a separate function is a form of procedural abstraction because the code is divided into many small codes that outputs the scene. Each scene would have the next scene connected to the next via a desicion. So after completing the defining part, only one code is needed to play the story. This allows the programming to be simple and more efficient to run.  </p>
+        <br>
+        <p>One story that was interesting was about aliens. The text and format in the terminal was very clean. After each desicion, the previous texts would be deleted and be replace witht he following scene's. The story was very well polished and fun.</p>
+        <iframe height="400px" width="80%" src="https://repl.it/@20knguyen39/The-Boys-Sacrifice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
     </body>
     </div>
 </html
